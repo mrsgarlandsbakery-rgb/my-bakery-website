@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Leave a Review – Mrs. Garland’s Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background-wrapper">
+    <div class="content">
+
+        <h1 style="text-align:center;">Leave a Review</h1>
+
+        <form action="https://formspree.io/f/xwpgdnvw"
+              method="POST"
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #e6f3ee;
+                padding: 24px;
+                border-radius: 16px;
+              ">
+
+            <!-- REDIRECT AFTER SUBMIT -->
+            <input type="hidden" name="_redirect" value="thank-you.html">
+
+            <!-- EMAIL SUBJECT -->
+            <input type="hidden" name="_subject" value="New Customer Review Submitted">
+
+            <!-- NAME -->
+            <label style="font-weight:bold; color:#2f6f5e;">
+                Your Name (optional)
+            </label>
+            <input type="text"
+                   name="name"
+                   placeholder="Anonymous"
+                   style="
+                        width: 100%;
+                        padding: 10px;
+                        margin: 8px 0 16px;
+                        border-radius: 8px;
+                        border: 1px solid #b5d8cd;
+                   ">
+
+            <!-- STAR RATING -->
+            <label style="font-weight:bold; color:#2f6f5e;">
+                Rating
+            </label>
+            <select name="rating"
+                    required
+                    style="
+                        width: 100%;
+                        padding: 10px;
+                        margin: 8px 0 16px;
+                        border-radius: 8px;
+                        border: 1px solid #b5d8cd;
+                    ">
+                <option value="">Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                <option value="4">⭐⭐⭐⭐ (4)</option>
+                <option value="3">⭐⭐⭐ (3)</option>
+                <option value="2">⭐⭐ (2)</option>
+                <option value="1">⭐ (1)</option>
+            </select>
+
+            <!-- REVIEW -->
+            <label style="font-weight:bold; color:#2f6f5e;">
+                Your Review
+            </label>
+            <textarea name="review"
+                      rows="6"
+                      required
+                      style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 8px;
+                            border-radius: 8px;
+                            border: 1px solid #b5d8cd;
+                      "></textarea>
+
+            <!-- SUBMIT -->
+            <div style="text-align:center; margin-top:20px;">
+                <button type="submit"
+                        style="
+                            padding: 12px 28px;
+                            background-color: #2f6f5e;
+                            color: #ffffff;
+                            font-size: 16px;
+                            font-weight: bold;
+                            border: none;
+                            border-radius: 12px;
+                            cursor: pointer;
+                        ">
+                    Submit Review
+                </button>
+            </div>
+
+            <!-- BACK TO MAIN PAGE -->
+            <div style="text-align:center; margin-top:16px;">
+                <a href="index.html"
+                   style="
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #2f6f5e;
+                        text-decoration: none;
+                   ">
+                    ← Back to Main Page
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
